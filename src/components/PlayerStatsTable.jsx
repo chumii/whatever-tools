@@ -30,6 +30,9 @@ function PlayerStatsTable({ entries }) {
     ...playerStats[player]
   }));
 
+  // Sortiere das Array alphabetisch nach dem Spielernamen
+  playerStatsArray.sort((a, b) => a.player.localeCompare(b.player));
+
   return (
     <div className="overflow-x-auto rounded-lg shadow bg-gray-800 text-sm text-gray-200">
       <table className="min-w-full">

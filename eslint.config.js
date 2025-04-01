@@ -9,12 +9,16 @@ export default [
     files: ['**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
+      globals: { ...globals.browser, process: true },  // Füge hier "process" zu den globalen Variablen hinzu
       parserOptions: {
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
         sourceType: 'module',
       },
+    },
+    env: {
+      node: true,  // Füge dies hinzu, um node-spezifische Variablen wie `process` zu unterstützen
+      browser: true,
     },
     plugins: {
       'react-hooks': reactHooks,

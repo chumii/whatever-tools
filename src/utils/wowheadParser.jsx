@@ -12,7 +12,7 @@ export default function convertItemStringToWowheadLink(itemString) {
     <a
       href={`https://www.wowhead.com/item=${itemId}`}
       data-wowhead={`item=${itemId}`}
-      class="text-[#a335ee] hover:underline"
+      className="text-[#a335ee] hover:underline"
       target="_blank"
       rel="noopener noreferrer"
     >

@@ -1,5 +1,5 @@
-const TURSO_URL = "https://whateverloothistory-bambule.aws-us-east-1.turso.io/v2/pipeline";
-const AUTH_TOKEN = "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicnciLCJpYXQiOjE3NDM0NjIyNTcsImlkIjoiZTM0OWI2ZDAtNTQ1NC00YWZhLThmZjctZjU2MjRjZmNjYjFiIiwicmlkIjoiMDRmYzk0NGUtMjRkMi00ZDEzLWEyMzUtOTc4MTFlMjk0YmM1In0.xOZSfhPhTHzfO8tfqkEThO3VoIMf6VbgDdwYbTPCMaCVuHyvNUeaG2jGX08lr_Ya5DVMkAYPTsoYYEEXhgypAQ";
+const TURSO_URL = import.meta.env.VITE_TURSO_URL;
+const AUTH_TOKEN = import.meta.env.VITE_AUTH_TOKEN;
 
 export default async function fetchLootEntries() {
   const res = await fetch(TURSO_URL, {
