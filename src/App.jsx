@@ -76,7 +76,7 @@ function App() {
   const extractUnique = (key) => [...new Set(entries.map(e => e[key]).filter(Boolean))];
 
   return (
-    <Router>
+    <Router basename="/whatever-tools">
       <PageLayout>
         <Routes>
           <Route path="/" element={
