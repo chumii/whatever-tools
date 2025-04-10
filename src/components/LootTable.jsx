@@ -24,14 +24,14 @@ function LootTable({ entries }) {
         <tbody>
           {entries.map((entry, idx) => (
             <tr key={idx} className="even:bg-gray-750 hover:bg-gray-700 transition">
-              <td className="px-4 py-2 whitespace-nowrap">{entry.dateFormatted}</td>
-              <td className="px-4 py-2 whitespace-nowrap">{entry.playerElement}</td>
-              <td className="px-4 py-2">{entry.itemElement}</td>
-              <td className="px-4 py-2 whitespace-nowrap">{entry.response}</td>
-              <td className="px-4 py-2">{entry.note}</td>
-              <td className="px-4 py-2 whitespace-nowrap">{entry.boss}</td>
-              <td className="px-4 py-2 whitespace-nowrap">{entry.instance}</td>
-              <td className="px-4 py-2 whitespace-nowrap">{entry.difficulty}</td>
+              <td className="px-4 py-2 whitespace-nowrap text-sm">{entry.dateFormatted}</td>
+              <td className="px-4 py-2 whitespace-nowrap text-sm">{entry.playerElement}</td>
+              <td className="px-4 py-2 text-sm">{entry.itemElement}</td>
+              <td className="px-4 py-2 whitespace-nowrap text-sm">{entry.response}</td>
+              <td className="px-4 py-2 text-sm">{entry.note}</td>
+              <td className="px-4 py-2 whitespace-nowrap text-sm">{entry.boss}</td>
+              <td className="px-4 py-2 whitespace-nowrap text-sm">{entry.instance}</td>
+              <td className="px-4 py-2 whitespace-nowrap text-sm">{entry.difficulty}</td>
             </tr>
           ))}
         </tbody>
